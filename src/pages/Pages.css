@@ -9,7 +9,7 @@
 .player {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
     flex-wrap: wrap;
     gap: 21px;
 }
@@ -20,11 +20,14 @@
 }
 
 .sc {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .statment {
-    margin: auto;
     max-width: 500px;
     font-size: 15px;
     text-align: justify;
@@ -32,7 +35,7 @@
 }
 
 .p1 {
-    text-indent: 2em;
+    text-indent: 2em
 }
 
 .pa {
@@ -41,9 +44,21 @@
     margin-bottom: 33px;
 }
 
+h2 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
 @media screen and (min-width: 640px) {
 
     .main {
         margin: 0 68px;
+    }
+}
+
+@media screen and (min-width: 1186px) {
+
+    h2 {
+        margin-top: 17px;
     }
 }
