@@ -7,6 +7,7 @@ export const About = ({aboutext}) => {
             <div className="sc">
                 <div className="statment">
                     <p className="p1 pa">{aboutext.about}</p>
+                    <h2>AI Statement</h2>
                     <p className="p1">{aboutext.ai1}</p>
                     <p>{aboutext.ai2}</p>
                     <p>{aboutext.ai3}</p>
