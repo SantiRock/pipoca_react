@@ -4,6 +4,7 @@
 
 .home_c {
     text-align: center;
+    height: 100%;
 }
 
 .player {
@@ -12,6 +13,7 @@
     align-items: start;
     flex-wrap: wrap;
     gap: 21px;
+
 }
 
 .home_c p {

@@ -3,11 +3,9 @@ import "./Pages.css"
 export const Home = ({hometext}) => {
     return(
         <div className="main home_c">
-            <div className="player">
-                <iframe style={{border: 0, width: "350px", height: "621px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3402457687/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://pipocamusic.bandcamp.com/album/laman-di-oro">Laman Di Oro by Pipoca</a></iframe>
-                
-                <iframe style={{border: 0, width: "350px", height: "621px"}} src="https://bandcamp.com/EmbeddedPlayer/album=43757842/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://pipocamusic.bandcamp.com/album/sou-chimen-la">Sou Chimen La de Pipoca</a></iframe>
-            </div>
+
+                <iframe width="100%"height="100%"src="https://www.youtube.com/embed/videoseries?si=Pr1a_adxmYRfdf0_&amp;list=PLAQdXQOQHdBLmDFHemjh0XbfWMNg3CIfO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
             <p className="ph">{hometext.next}</p>
         </div>
     )
