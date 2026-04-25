@@ -17,7 +17,6 @@ export const About = ({aboutext}) => {
                     <h2>{aboutext.diexism_title}</h2>
                     <p className="p1">{aboutext.d1}</p>
                     <p>{aboutext.d2}</p>
-                    <p>{aboutext.d3}</p>
                     <p>{aboutext.d4}</p>
                 </div>
             </div>

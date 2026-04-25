@@ -73,7 +73,7 @@ export const Header = ({lang, setLang, setHome, setAbout, setRealeases, setGigs}
             <div className="menu_c">
                 <img className="logo" src="rayito_alpha.png" alt="Pipoca" with="80" height="80" onClick={handleHome}/>
                 <p className="menu" onClick={handleAbout}>About</p>
-                <p className="menu" onClick={handleRealeases}>Releases</p>
+                <a href="https://pipocamusic.bandcamp.com/" target="_blank"><p className="menu" >Releases</p></a>
                 <p className="menu" onClick={handleGigs}>Gigs</p>
             </div>   
         </header>

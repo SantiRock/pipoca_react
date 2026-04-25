@@ -20,7 +20,6 @@ function App() {
   const [showGigs, setShowGigs] = useState(false)
 
   return (
-    <>
       <div className='main_container'>
         <div>
           <Header 
@@ -38,7 +37,6 @@ function App() {
         </div>
         <Footer/>
       </div>
-    </>
   )
 }
 
