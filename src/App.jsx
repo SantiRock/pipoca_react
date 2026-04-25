@@ -7,6 +7,7 @@ import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Realeases } from './pages/Releases'
+import { Gigs } from './pages/Gigs'
 
 function App() {
   const langCode = navigator.language.slice(0,2)
@@ -16,6 +17,7 @@ function App() {
   const [showHome, setShowHome] = useState(true)
   const [showAbout, setShowAbout] = useState(false)
   const [showReleases, setShowRelease] = useState(false)
+  const [showGigs, setShowGigs] = useState(false)
 
   return (
     <>
@@ -27,10 +29,12 @@ function App() {
             setHome={setShowHome}
             setAbout={setShowAbout}
             setRealeases={setShowRelease}
+            setGigs={setShowGigs}
           />
           {showHome && <Home hometext={hometext[lang]}/>}
           {showAbout && <About aboutext={aboutext[lang]} />}
           {showReleases && <Realeases />}
+          {showGigs && <Gigs />}
         </div>
         <Footer/>
       </div>

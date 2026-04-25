@@ -1,26 +1,35 @@
 import "../App.css"
 
 
-export const Header = ({lang, setLang, setHome, setAbout, setRealeases}) => {
+export const Header = ({lang, setLang, setHome, setAbout, setRealeases, setGigs}) => {
 
     const handleHome = () => {
         setHome(true)
         setAbout(false)
         setRealeases(false)
+        setGigs(false)
     }
 
     const handleAbout = () => {
         setHome(false)
         setAbout(true)
         setRealeases(false)
+        setGigs(false)
     }
 
     const handleRealeases = () => {
         setHome(false)
         setAbout(false)
         setRealeases(true)
+        setGigs(false)
     }
 
+    const handleGigs = () => {
+        setHome(false)
+        setAbout(false)
+        setRealeases(false)
+        setGigs(true)
+    }
 
     return(
         <header>
@@ -62,12 +71,10 @@ export const Header = ({lang, setLang, setHome, setAbout, setRealeases}) => {
             </nav>
 
             <div className="menu_c">
-                <a href="https://pipocamusic.bandcamp.com/" target="_blank" >
-                    <img className="logo" src="rayito_alpha.png" alt="Pipoca" with="80" height="80"/>
-                </a>
-                <p className="menu" onClick={handleHome}>Home</p>
+                <img className="logo" src="rayito_alpha.png" alt="Pipoca" with="80" height="80" onClick={handleHome}/>
                 <p className="menu" onClick={handleAbout}>About</p>
                 <p className="menu" onClick={handleRealeases}>Releases</p>
+                <p className="menu" onClick={handleGigs}>Gigs</p>
             </div>   
         </header>
     )
